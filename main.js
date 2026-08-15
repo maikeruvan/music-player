@@ -152,6 +152,9 @@ nextTrackBtn.addEventListener('click', () => {
 
 audio.addEventListener('ended', () => {
     if (!isShuffled) {
+        playPauseBtn.querySelector('svg').classList.remove('fa-pause');
+        playPauseBtn.querySelector('svg').classList.add('fa-play');
+
         return;
     }
 
