@@ -85,7 +85,6 @@ audio.addEventListener('loadedmetadata', (e) => {
     // Load the UI
     if (!isNaN(audio.duration)) {
         loadTrackUI(trackIndex);
-        isReady = true;
     }
 });
 
