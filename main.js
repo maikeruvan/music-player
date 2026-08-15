@@ -38,13 +38,13 @@ const musicLibrary = [
         coverImage: 'images/linkinpark.jpg',
         title: 'In the end',
         artist: 'Linkin Park',
-        src: 'songs/in the end.mp3'
+        src: 'songs/intheend.mp3'
     },
     {
         coverImage: 'images/theweeknd.jpg',
         title: 'Save your tears',
         artist: 'The Weeknd',
-        src: 'songs/save your tears.mp3'
+        src: 'songs/saveyourtears.mp3'
     },
     {
         coverImage: 'images/cover-image.jpg',
@@ -85,6 +85,7 @@ audio.addEventListener('loadedmetadata', (e) => {
     // Load the UI
     if (!isNaN(audio.duration)) {
         loadTrackUI(trackIndex);
+        isReady = true;
     }
 });
 
